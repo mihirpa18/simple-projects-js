@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+}
+.container{
+   
+    height: 20vh;
+}
+
+.head{
+    display: flex;
+    font-size: 15vh;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.box{
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.dis1{
+    display: flex;
+    height: 20vmin;
+    width: 20vmin;
+    border: 2px solid black;
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: green;
+    font-size: 10vh;
+    font-weight: 40px;
+}
+.dis2{
+    display: flex;
+    height: 40vmin;
+    width: 80vw;
+    border:none;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    font-size: 20vh;
+
+}
+.dis3{
+    display: flex;
+    height: 20vmin;
+    width: 20vmin;
+    border: 2px solid black;
+    border-radius: 80px;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+    font-size: 10vh;
+    
+
+}
+
+.res{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resetbtn{
+    font-size: 50px;
+    background-color: rgb(195, 188, 180);
+    color: rgb(121, 37, 37);
+    border-radius: 30px;
+    width: 20vw;
+}
+

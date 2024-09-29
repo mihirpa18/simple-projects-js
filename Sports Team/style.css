@@ -1,0 +1,160 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to bottom, #003366, #002147);
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #004080;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0 100px 200px rgba(160, 71, 71, 0.2);
+}
+
+.team-logo {
+  width: 60px;
+  transition: transform 0.3s ease;
+}
+
+.team-logo:hover {
+  transform: rotate(360deg);
+}
+
+h1 {
+  color: #f7b731;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+} 
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(250, 245, 245);
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: #f7b731;
+  border-radius: 5px;
+  color: black;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(246, 237, 237);
+  margin: 4px 0;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #004080;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 999;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+}
+
+main {
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f7b731;
+  text-align: center;
+  padding: 10px;
+  background-color: #003366;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h2:hover {
+  background-color: #f7b731;
+  color: #003366;
+  transform: scale(1.05);
+}
+
+.team-info, .news-container, .team-schedule, .player-list, .live-scorecard {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #004080;
+  color: white;
+}
+
+.player-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.player-list li {
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 0;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.player-list li:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Cricket Team</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <img src="logo.png" alt="Indian Cricket Team Logo" class="team-logo">
+            <h1>Indian Cricket Team</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#team-info">Team Overview</a></li>
+                    <li><a href="#players-list">Players</a></li>
+                    <li><a href="#live-scorecard">Live Score</a></li>
+                    <li><a href="#latest-news">News</a></li>
+                    <li><a href="#team-schedule">Schedule</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sections (unchanged) -->
+        <section id="team-info" class="team-info">
+            <h2>Team Overview</h2>
+            <p>The Indian cricket team represents India in men's international cricket. It is known for its dominance in world cricket and iconic players.</p>
+        </section>
+
+        <section id="players-list" class="player-list">
+            <h2>Team Players</h2>
+            <ul>
+                <!-- Player names and images will be fetched here -->
+            </ul>
+        </section>
+
+        <section id="live-scorecard" class="live-scorecard">
+            <h2>Recent match Scorecard</h2>
+            <div id="scorecard">
+                <!-- Live score will be fetched here -->
+            </div>
+        </section>
+
+        <section id="latest-news" class="latest-news">
+            <h2>Latest News</h2>
+            <div class="news-container">
+                <!-- News items will be populated dynamically -->
+            </div>
+        </section>
+
+        <section id="team-schedule" class="team-schedule">
+            <h2>Upcoming Matches</h2>
+            <div id="matches-list">
+                <!-- Matches will be fetched here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Indian Cricket Team </p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
